@@ -33,7 +33,7 @@
             <div class="preloader-inner position-relative">
                 <div class="preloader-circle"></div>
                 <div class="preloader-img pere-text">
-                    <img src="assets/img/logo/loder.png" alt="">
+                    <img src="<?= base_url('assets/home/assets/img/logo/loder.png') ?>" alt="">
                 </div>
             </div>
         </div>
@@ -46,7 +46,9 @@
                 <!-- Logo -->
                 <div class="header-left">
                     <div class="logo">
-                        <a href="index.html"><img src="assets/img/logo/logo.png" alt=""></a>
+                    <a href="<?= site_url('home') ?>">
+                            <img src="<?= base_url('assets/home/assets/img/logo/logo.png') ?>" alt="">
+                        </a>
                     </div>
                     <div class="menu-wrapper  d-flex align-items-center">
                         <!-- Main-menu -->
@@ -56,7 +58,6 @@
                                     <li class="active"><a href="index.html">Home</a></li>
                                     <li><a href="about.html">About</a></li>
                                     <li><a href="services.html">Services</a></li>
-                                    <li><a href="blog.html">Blog</a>
                                         <ul class="submenu">
                                             <li><a href="blog.html">Blog</a></li>
                                             <li><a href="blog_details.html">Blog Details</a></li>
@@ -70,8 +71,9 @@
                     </div>
                 </div> 
                 <div class="header-right d-none d-lg-block">
-                    <a href="#" class="header-btn1"><img src="assets/img/icon/call.png" alt=""> (08) 728 256 266</a>
-                    <a href="#" class="header-btn2">Make an Appointment</a>
+                    <a href="#" class="header-btn1"><img src="<?= base_url('assets/home/assets/img/icon/call.png') ?>" alt=""> (08) 728 256 266
+                    </a>
+                    <a href="#" class="header-btn2">Hubungi</a>
                 </div>
                 <!-- Mobile Menu -->
                 <div class="col-12">
@@ -174,7 +176,8 @@
                             <img src="<?= base_url('assets/home/assets/img/gallery/offers2.png') ?>" alt="" class="w-100">
                             <div class="offers-caption text-center">
                                 <div class="cat-icon">
-                                    <img src="assets/img/icon/offers-icon1.png" alt="">
+                                    <img src="<?= base_url('assets/home/assets/img/icon/offers-icon1.png') ?>" alt="">
+
                                 </div>
                                 <div class="cat-cap">
                                     <h5><a href="services.html">Cloth laundry</a></h5>
@@ -185,10 +188,10 @@
                     </div>
                     <div class="col-lg-6 col-md-6">
                         <div class="single-offers">
-                            <img src="assets/img/gallery/offers2.png" alt="" class=" w-100">
+                            <img src="<?= base_url('assets/home/assets/img/gallery/offers2.png') ?>" alt="" class="w-100">
                             <div class="offers-caption text-center">
                                 <div class="cat-icon">
-                                    <img src="assets/img/icon/offers-icon1.png" alt="">
+                                    <img src="<?= base_url('assets/home/assets/img/icon/offers-icon1.png') ?>" alt="">
                                 </div>
                                 <div class="cat-cap">
                                     <h5><a href="services.html">Cloth ironing</a></h5>
@@ -199,7 +202,7 @@
                     </div>
                     <div class="col-lg-6 col-md-6">
                         <div class="single-offers">
-                            <img src="assets/img/gallery/offers4.png" alt="" class=" w-100">
+                            <img src="<?= base_url('assets/home/assets/img/gallery/offers4.png') ?>" alt="" class="w-100">
                         </div>
                     </div>
                 </div>
@@ -208,7 +211,7 @@
         <!-- Offer-services End  -->
         <!--? Want To work -->
         <section class="container">
-            <section class="wantToWork-area" data-background="assets/img/gallery/section_bg01.png">
+             <section class="wantToWork-area" data-background="<?= base_url('assets/home/assets/img/gallery/section_bg01.png') ?>">
                 <div class="wants-wrapper w-padding2">
                     <div class="row align-items-center justify-content-between">
                         <div class="col-xl-8 col-lg-9 col-md-7">
@@ -218,7 +221,10 @@
                             </div>
                         </div>
                         <div class="col-xl-3 col-lg-3 col-md-5">
-                            <a href="#" class="btn wantToWork-btn"><img src="assets/img/icon/call2.png" alt=""> Learn More</a>
+                        <a href="#" class="btn wantToWork-btn">
+                            <img src="<?= base_url('assets/home/assets/img/icon/call2.png') ?>" alt=""> Learn More
+                        </a>
+
                         </div>
                     </div>
                 </div>
@@ -234,16 +240,16 @@
                             <!-- testmonial-image -->
                             <div class="testmonial-nav text-center">
                                 <div class="testmonial-thumb">
-                                    <img src="assets/img/gallery/testimonila1.png" alt="">
+                                    <img src="<?= base_url('assets/home/assets/img/gallery/testimonila1.png') ?>" alt="">
                                 </div>
                                 <div class="testmonial-thumb">
-                                    <img src="assets/img/gallery/testimonila2.png" alt="">
+                                    <img src="<?= base_url('assets/home/assets/img/gallery/testimonila2.png') ?>" alt="">
                                 </div>
                                 <div class="testmonial-thumb">
-                                    <img src="assets/img/gallery/testimonila3.png" alt="">
+                                    <img src="<?= base_url('assets/home/assets/img/gallery/testimonila3.png') ?>" alt="">
                                 </div>
                                 <div class="testmonial-thumb">
-                                    <img src="assets/img/gallery/testimonila2.png" alt="">
+                                    <img src="<?= base_url('assets/home/assets/img/gallery/testimonila2.png') ?>" alt="">
                                 </div>
                             </div>
                             <div class="testmonial-item-active text-center">
@@ -269,7 +275,7 @@
                                         <i class="fas fa-star"></i>
                                         <i class="fas fa-star"></i>
                                     </div>
-                                    <p> - Rupaya</p>
+                                    <p> - Rupa</p>
                                 </div>
                                 <!-- testimonial-single-items -->
                                 <div class="testmonial-item ">
