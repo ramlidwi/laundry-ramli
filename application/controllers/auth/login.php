@@ -10,9 +10,11 @@ class Login extends CI_Controller {
         $this->load->model('Auth_model');
         $this->load->library(['session', 'form_validation']);
 
-        if ($this->session->userdata('logged_in')) {
-            redirect('dashboard'); 
-        }
+        
+    }
+
+    public function index() {
+        $this->load->view('auth/auth-login');
     }
 
     public function login_action() {
@@ -50,12 +52,22 @@ class Login extends CI_Controller {
 
         redirect('dashboard'); 
     }
-
-
     
 
+    public function logout()
+    {
+        // Optional: hanya logout jika user memang login
+        if ($this->session->userdata('username')) {
+            // Hapus semua data session
+            $this->session->unset_userdata('username'); // atau apapun key login yang kamu gunakan
+            $this->session->unset_userdata('user_id');
+            $this->session->unset_userdata('role');
+        }
 
-    public function index() {
-        $this->load->view('auth/auth-login');
+        // Hancurkan session sepenuhnya
+        $this->session->sess_destroy();
+
+        // Redirect ke halaman login
+        redirect('auth/login');
     }
 }

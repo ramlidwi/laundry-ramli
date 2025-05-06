@@ -203,6 +203,14 @@
                             </a>
                         </li>
 
+                        <li class="sidebar-item">
+                            <a href="javascript:void(0);" onclick="confirmLogout()" class="sidebar-link">
+                                <i class="bi bi-box-arrow-right"></i>
+                                <span>Log Out</span>
+                            </a>
+                        </li>
+
+
                         <li class="sidebar-item  ">
                             <a href="table-datatable.html" class='sidebar-link'>
                                 <i class="bi bi-file-earmark-spreadsheet-fill"></i>
@@ -673,6 +681,29 @@
     <script src="<?= base_url('assets/dashboard/dist/assets/js/pages/dashboard.js') ?>"></script>
 
     <script src="<?= base_url('assets/dashboard/dist/assets/js/main.js') ?>"></script>
+
+    <!-- SweetAlert CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script>
+        function confirmLogout() {
+            Swal.fire({
+                title: 'Yakin ingin keluar?',
+                text: "Anda akan keluar dari sesi!",
+                icon: 'warning',
+                showCancelButton: true,
+                confirmButtonColor: '#3085d6',
+                cancelButtonColor: '#d33',
+                confirmButtonText: 'Ya, keluar!',
+                cancelButtonText: 'Batal'
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    window.location.href = "<?php echo base_url('auth/login/logout'); ?>";
+                }
+            });
+        }
+    </script>
+
 
 </body>
 
