@@ -18,11 +18,7 @@
         <div class="row h-100">
             <div class="col-lg-5 col-12">
                 <div id="auth-left">
-                    <div class="auth-logo mb-4">
-                        <a href="<?php echo base_url(); ?>">
-                            <img src="<?php echo base_url('assets/dashboard/dist/assets/images/logo/logo.png'); ?>" alt="Logo">
-                        </a>
-                    </div>
+                    
 
                     <h1 class="auth-title">Log in</h1>
                     <p class="auth-subtitle mb-5">Log in with the credentials you created.</p>
@@ -65,7 +61,7 @@
 
                     <div class="text-center mt-5 text-lg fs-4">
                         <p class="text-gray-600">Don't have an account?
-                            <a href="<?php echo base_url('auth/register'); ?>" class="font-bold">Sign up</a>.
+                            <a href="<?php echo base_url('auth/registrasi'); ?>" class="font-bold">Sign up</a>.
                         </p>
                         <p>
                             <a class="font-bold" href="<?php echo base_url('auth/forgot_password'); ?>">Forgot password?</a>
